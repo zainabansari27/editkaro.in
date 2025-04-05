@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+<!--swippercss-->
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+<style>
+    #darkMode-icon{
+    font-size: 2.4rem;
+    color:var(--textcolor);
+    cursor: pointer;
+}
+.navbar a{
+    position: relative;
+     font-size: 1.7rem;
+     color: var(--textcolor);
+     font-weight: 500;
+     margin-right: 3.5rem;
+}
+
+</style>
+
+</head>
+<body>   
+
+   <header class="header">
+    <a href="#" class="logo">Editkaro.in</a>
+
+    <nav class="navbar">
+
+    <a href="home.html" class="active">Home</a>
+    <a href="about.html" class="">About</a>
+    <a href="service.html" class="">Services</a>
+    <a href="portfolio.html" class="">Portfolio</a>
+    <a href="contactUs.html" class="">Contact</a>
+
+    </nav>
+    <div class="bx bx-moon" id="darkMode-icon"></div>
+
+    <div class="bx bx-menu" id="menu-icon"></div>
+   </header>
+
+  
+
+
+     <!--portfolio section or video section design-->
+
+     <section class="portfolio" id="portfolio">
+        <h2 class="heading">Latest<span> Projects</span></h2>
+          
+<div class="video-navigation">
+    <button class="filter-btn active" data-category="all">All</button>
+    <button class="filter-btn" data-category="shortform">Short-form Videos</button>
+    <button class="filter-btn" data-category="longform">Long-form Videos</button>
+    <button class="filter-btn" data-category="gaming">Gaming Videos</button>
+    <button class="filter-btn" data-category="football">Football Edits</button>
+    <button class="filter-btn" data-category="ads">eCommerce Ads</button>
+    <button class="filter-btn" data-category="documentary">Documentary Style</button>
+    <button class="filter-btn" data-category="colorgrading">Color Grading</button>
+    <button class="filter-btn" data-category="anime">Anime Videos</button>
+    <button class="filter-btn" data-category="ads">Ads</button>
+</div>
+
+
+<div class="video-grid">
+    
+    <div class="video-box" data-category="shortform">
+        <video controls>
+            <source src="videos/short-video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="video-info"><h3>Short Video</h3><p>Quick entertaining content</p></div>
+    </div>
+
+   
+    <div class="video-box" data-category="longform">
+        <iframe src="https://www.youtube.com/embed/rfscVS0vtbw" allowfullscreen></iframe>
+        <div class="video-info"><h3>Long-form Video</h3><p>In-depth tutorial or vlog</p></div>
+    </div>
+
+  
+    <div class="video-box" data-category="gaming">
+        <video controls>
+            <source src="videos/gaming-video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        
+        <div class="video-info"><h3>Gaming Video</h3><p>Exciting game highlights</p></div>
+    </div>
+
+    
+    <div class="video-box" data-category="football">
+        <video controls> 
+            <source src="videos/football-video.mp4" type="video/mp4">
+        </video>
+        <div class="video-info"><h3>Football Edits</h3><p>Best moments in football</p></div>
+    </div>
+
+    
+    <div class="video-box" data-category="ads">
+        <video controls> 
+            <source src="videos/ecommerce-ads.mp4" type="video/mp4">
+        </video>
+        <div class="video-info"><h3>eCommerce Ad</h3><p>Marketing & promotions</p></div>
+    </div>
+
+    
+    <div class="video-box" data-category="documentary">
+        <video controls> 
+            <source src="videos/documentary.mp4" type="video/mp4">
+        </video>
+        <div class="video-info"><h3>Documentary Style</h3><p>Deep dive into real-life stories</p></div>
+    </div>
+
+    <div class="video-box" data-category="colorgrading">
+        <video controls> 
+            <source src="videos/color-grading.mp4" type="video/mp4">
+        </video>
+        <div class="video-info"><h3>Color Grading</h3><p>Creative visual enhancement</p></div>
+    </div>
+
+  
+    <div class="video-box" data-category="anime">
+        <video controls> 
+            <source src="videos/anime-video.mp4" type="video/mp4">
+        </video>
+        <div class="video-info"><h3>Anime Videos</h3><p>Latest anime clips</p></div>
+    </div>
+
+    
+    <div class="video-box" data-category="ads">
+        <video controls> 
+            <source src="videos/advertisement.mp4" type="video/mp4">
+        </video>
+        <div class="video-info"><h3>Advertisement</h3><p>Brand campaign video</p></div>
+    </div>
+</div>
+
+     </section>
+
+            
+
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+
+        </div>
+    </div>
+     </div>
+
+     <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-about">
+                <h3>Editkaro.in</h3>
+                <p>Professional video editing and social media marketing services to help your brand shine online.</p>
+                <div class="footer-social">
+                    <a href="#"><i class='bx bxl-facebook'></i></a>
+                    <a href="#"><i class="bx bxl-twitter"></i></a>
+                    <a href="#"><i class="bx bxl-instagram-alt"></i></a>
+                    <a href="#"><i class="bx bxl-linkedin"></i></a>
+                    <a href="#"><i class="bx bxl-youtube"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="service.html">Services</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="contactUs.html">Contact</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-services">
+                <h3>Our Services</h3>
+                <ul>
+                    <li><a href="service.html#services">Video Editing</a></li>
+                    <li><a href="service.html#services">Color Grading</a></li>
+                    <li><a href="service.html#services">Digital Marketing</a></li>
+                    <li><a href="service.html#services">Social Media Management</a></li>
+                    <li><a href="service.html#services">Content Creation</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-contact">
+                <h3>Contact Us</h3>
+                <p><i class='bx bx-envelope'></i> info@editkaro.in</p>
+                <p><i class='bx bx-phone'></i> +91 1234567890</p>
+                <p><i class='bx bx-map'></i> Mumbai, India</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <div class="footer-text">
+                <p>Copyright &copy; 2025 by Editkaro.in | All Rights Reserved</p>
+            </div>
+            <div class="footer-iconTop">
+                <a href="#portfolio"><i class="bx bx-up-arrow-alt"></i></a>
+            </div>
+        </div>
+    </footer>
+
+     <script src="https://unpkg.com/scrollreveal"></script>
+
+     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+    
+</body>
+</html>
